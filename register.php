@@ -28,11 +28,11 @@
             </div>
 
             <div class="form-group">
-                <button type="button" class="btn btn-danger"> Créer mon compte </button>
+                <button type="button" class="btn btn-primary text-white"> Créer mon compte </button>
             </div>
 
             <div class="form-group">
-                <button type="button" class="btn btn-danger center-block"> Cliquez ici pour vous connecter </button>
+                <button type="button" class="btn btn-primary text-white"> Cliquez ici pour vous connecter </button>
             </div>
 
         </form>
