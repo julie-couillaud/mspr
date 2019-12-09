@@ -3,7 +3,7 @@
     <section>
         <div class="container">
 
-        <h1 class="text-center text-info mt-4 mb-4"> Créer un compte Jumady </h1>
+        <h1 class="text-center text-violet mt-4 mb-4"> Créer un compte Jumady </h1>
 
         <form method="post" action="register.php" class="mx-auto" style="max-width: 600px">
 
