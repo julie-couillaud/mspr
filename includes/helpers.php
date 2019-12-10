@@ -1,6 +1,5 @@
 <?php
-
-require_once '../env.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/env.php';
 
 function dd($var){
     var_dump($var);

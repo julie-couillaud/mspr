@@ -1,5 +1,5 @@
 <?php require_once './vendor/autoload.php'; ?>
-<?php require_once './includes/config.php'; ?>
+<?php require_once 'config.php'; ?>
 <?php require_once 'helpers.php'; ?>
 
 <!doctype html>
