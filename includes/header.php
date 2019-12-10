@@ -11,16 +11,33 @@
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
 <body>
-<nav class="navbar navbar-light bg-warning">
-    <a class="navbar-brand text-white" href="">
-        <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
-        Jumady ses recettes
-    </a>
-    <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Vous cherchez une recette ?" aria-label="Search">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Rechercher</button>
-    </form>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <img src="./public/images/logo.png" width="140" height="60" class="d-inline-block align-top" alt="">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Top recettes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Apéros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Entrées</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Plats</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Desserts</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Une recette en tête ?" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Rechercher</button>
+        </form>
+    </div>
 </nav>
+
 
 <div id="app">
     <header id="header">
