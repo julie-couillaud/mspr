@@ -1,4 +1,4 @@
-<?php require_once 'includes/header.php'; ?>
+<?php require_once './includes/header.php'; ?>
 
     <section>
         <div class="container">
@@ -39,4 +39,4 @@
         </div>
     </section>
 
-<?php require_once 'includes/footer.php'; ?>
+<?php require_once './includes/footer.php'; ?>
