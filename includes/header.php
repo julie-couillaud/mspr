@@ -1,5 +1,6 @@
 <?php require_once './vendor/autoload.php'; ?>
 <?php require_once './includes/config.php'; ?>
+<?php require_once 'helpers.php'; ?>
 
 <!doctype html>
 <html lang="fr">
@@ -24,6 +25,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Entrées</a>
             </li>
+
+
             <li class="nav-item">
                 <a class="nav-link" href="#">Plats</a>
             </li>
