@@ -1,15 +1,13 @@
 <?php
+require_once '../includes/helpers.php';
 
+$data = [];
 
-?>
-=======
-if (true){
-  header('location: ../');
- } else {
-    header('location:../register.php?errored=true');
+foreach ($_POST as $name => $value){
+    $data[$name] = $value;
 }
 
-
 $dbh = connectDB();
-$
-
+$stmt = $dbh->prepare('SELECT (firts_name, last_name) FROM users');
+$stmt->execute();
+return $stmt->fetch(PDO::FETCH_ASSOC);

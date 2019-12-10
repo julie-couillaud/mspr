@@ -5,7 +5,7 @@
 
         <h1 class="text-center text-violet mt-4 mb-4"> Créer un compte Jumady </h1>
 
-        <form method="post" action="register.php" class="mx-auto" style="max-width: 600px">
+        <form method="POST" action="./assets/register.php" class="mx-auto" style="max-width: 600px">
 
             <div class="form-group">
                 <label for="last_name"> Nom : </label>
@@ -33,11 +33,11 @@
             </div>
 
             <div class="form-group">
-                <button type="button" class="btn btn-primary text-white"> Créer mon compte </button>
+                <button type="submit" class="btn btn-primary text-white"> Créer mon compte </button>
             </div>
 
             <div class="form-group">
-                <button type="button" class="btn btn-primary text-white"> Cliquez ici pour vous connecter </button>
+                <a class="btn btn-primary text-white"> Cliquez ici pour vous connecter </a>
             </div>
 
         </form>
