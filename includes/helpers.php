@@ -15,15 +15,6 @@ function getUsers(){
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function isAuth(){
-    return isset($_SESSION['auth_id']);
-}
-
-function getAuth(){
-    if(!isAuth()){
-        false
-    }
-}
 
 function getUser($id){
     $dbh = connectDB();
