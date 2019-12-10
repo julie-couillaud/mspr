@@ -2,8 +2,27 @@
 
 require_once './env.php';
 
+session_start();
+
 function connectDB(){
     return new PDO("mysql:host=localhost;dbname=mspr", "root", "");
+}
+
+function getUsers(){
+    $dbh = connectDB();
+    $stmt = $dbh->prepare('SELECT * FROM users');
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function isAuth(){
+    return isset($_SESSION['auth_id']);
+}
+
+function getAuth(){
+    if(!isAuth()){
+        false
+    }
 }
 
 function getUser($id){
