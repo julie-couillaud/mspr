@@ -2,12 +2,8 @@
 <footer id="footer" class="py-5 bg-primary">
     <div class="container">
     <div class="row">
-        <div class="col-12 col-md">
-
-            <small class="d-block mb-3  text-white">Jumady ses recettes :)</small>
-        </div>
-        <div class="col-6 col-md text-white">
-            <h5 class="lead text-white">Recettes par régions</h5>
+        <div class="col-3 col-md text-white">
+            <h5 class="lead text-white"><strong>Recettes par régions</strong></h5>
             <ul class="list-unstyled text-small text-white">
                 <li><a class="text-white" href="#">Asie</a></li>
                 <li><a class="text-white" href="#">Inde</a></li>
@@ -18,8 +14,8 @@
                 <li><a class="text-white" href="#">Afrique</a></li>
             </ul>
         </div>
-        <div class="col-6 col-md text-white">
-            <h5 class="lead text-white">Les thématiques</h5>
+        <div class="col-3 col-md text-white">
+            <h5 class="lead text-white"><strong>Les thématiques</strong></h5>
             <ul class="list-unstyled text-small text-white">
                 <li><a class="text-white" href="#">Petit déjeuner</a></li>
                 <li><a class="text-white" href="#">Soupes</a></li>
@@ -27,10 +23,10 @@
                 <li><a class="text-white" href="#">Bébés</a></li>
                 <li><a class="text-white" href="#">Brunch</a></li>
                 <li><a class="text-white" href="#">Végétarien</a></li>
-                <li><a class="text-white" href="#">Noël</a></li>
+                <li><a class="text-white" href="#">Sans gluten</a></li>
             </ul>
         </div>
-        <div class="col-6 col-md text-white">
+        <div class="col-3 col-md text-white">
             <h5 class="lead text-white"><strong>Recettes saisonnières</strong></h5>
             <ul class="list-unstyled text-small text-white">
                 <li><a class="text-white" href="#">Hiver</a></li>
@@ -42,16 +38,18 @@
                 <li><a class="text-white" href="#">Été</a></li>
             </ul>
         </div>
-        <div class="col-6 col-md text-white">
-            <h5 class="lead text-white">About</h5>
+        <div class="col-3 col-md text-white">
+            <h5 class="lead text-white"><strong>Jumady fêtes</strong></h5>
             <ul class="list-unstyled text-small text-white">
-                <li><a class="text-white" href="#">Team</a></li>
-                <li><a class="text-white" href="#">Locations</a></li>
-                <li><a class="text-white" href="#">Privacy</a></li>
-                <li><a class="text-white" href="#">Terms</a></li>
+                <li><a class="text-white" href="#">Noël</a></li>
+                <li><a class="text-white" href="#">Halloween</a></li>
+                <li><a class="text-white" href="#">Chandeleur</a></li>
+                <li><a class="text-white" href="#">Nouvel an</a></li>
+                <li><a class="text-white" href="#">Anniversaire</a></li>
             </ul>
         </div>
     </div>
+        <p class="text-center mt-5"><em>&copy; 2019 - JUMADY ses recettes, concocté avec soin par Julie, Mathilde et Dylan.</em></p>
     </div>
 </footer>
 </div>

@@ -11528,3 +11528,7 @@ a.text-violet:focus {
   }
 }
 
+#main {
+  min-height: 100vh;
+}
+

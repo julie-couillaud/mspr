@@ -16,7 +16,7 @@
     <img src="./public/images/logo.png" width="140" height="60" class="d-inline-block align-top" alt="">
     <div class="collapse navbar-collapse pl-5" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            <li class="nav-item text-violet">
                 <a class="nav-link" href="#">Top recettes</a>
             </li>
             <li class="nav-item">
@@ -34,6 +34,7 @@
                 <a class="nav-link" href="#">Desserts</a>
             </li>
         </ul>
+        <div class="custom-control-inline">
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Une recette en tête ?" aria-label="Search">
             <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Rechercher</button>
@@ -43,6 +44,7 @@
             <a class="nav-link" href="#">Se connecter</a>
         </li>
         </ul>
+        </div>
 
     </div>
 </nav>
