@@ -13,7 +13,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <img src="./public/images/logo.png" width="140" height="60" class="d-inline-block align-top" alt="">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse pl-5" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link" href="#">Top recettes</a>
@@ -35,12 +35,18 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Une recette en tête ?" aria-label="Search">
             <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Rechercher</button>
         </form>
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Se connecter</a>
+        </li>
+        </ul>
+
     </div>
 </nav>
 
 
 <div id="app">
     <header id="header">
-        //NAVBAR
+
     </header>
     <main id="main">
