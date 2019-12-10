@@ -8,8 +8,8 @@
         <form method="post" action="register.php" class="mx-auto" style="max-width: 600px">
 
             <div class="form-group">
-                <label for="name"> Nom : </label>
-                <input type="text" name="name" id="name" placeholder="Nom" class="form-control">
+                <label for="last_name"> Nom : </label>
+                <input type="text" name="last_name" id="last_name" placeholder="Nom" class="form-control">
             </div>
 
             <div class="form-group">
@@ -18,13 +18,18 @@
             </div>
 
             <div class="form-group">
-                <label for="mail">  Email : </label>
-                <input name="mail" id="mail" placeholder="Email" class="form-control">
+                <label for="pseudo">  Pseudo : </label>
+                <input name="pseudo" id="pseudo" placeholder="Pseudo" class="form-control">
             </div>
 
             <div class="form-group">
-                <label for="pwd">  Mot de passe : </label>
-                <input name="pwd" id="pwd" placeholder="Mot de passe" class="form-control">
+                <label for="email">  Email : </label>
+                <input name="email" id="email" placeholder="Email" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="passeword">  Mot de passe : </label>
+                <input name="passeword" id="passeword" placeholder="Mot de passe" class="form-control">
             </div>
 
             <div class="form-group">
