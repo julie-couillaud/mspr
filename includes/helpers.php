@@ -21,6 +21,11 @@ function getUsers(){
 function getUser($id){
     $dbh = connectDB();
     $stmt = $dbh->prepare("SELECT * FROM users WHERE id = :id");
+    $stmt->bindValue(':id', $id);
     $stmt->execute([":id"=> $id]);
     return $stmt->fetch(PDO::FETCH_ASSOC);
+}
+
+function isAuth(){
+    return isset($_SESSION['auth_id']);
 }

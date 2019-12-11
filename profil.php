@@ -16,11 +16,11 @@ $user = getUser($id); ?>
             <img src="http://placehold.it/300" alt="" class="img-rounded img-responsive" />
         </div>
         <div class="card-body col-lg-10">
-            <h2>Profil de <?php echo $user['pseudo']; ?></h2>
+            <h2>Profil de <?php echo getAuth()['first_name']; ?></h2>
             <p><small> San Francisco, USA</small></p>
             <p> email@example.com </p>
             <p> www.jquery2dotnet.com </p>
-            <p> June 02, 1988</p>
+            <p> June 02, 1988 </p>
         </div>
     </div>
 </div>

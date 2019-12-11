@@ -28,7 +28,7 @@
             </div>
 
             <div class="form-group">
-                <label for="password">  Mot de passe : </label>
+                <label for="password"> Mot de passe : </label>
                 <input name="password" id="password" placeholder="Mot de passe" class="form-control">
             </div>
 

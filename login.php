@@ -1,11 +1,9 @@
-<?php require_once '../includes/header.php'; ?>
+<?php require_once './includes/header.php'; ?>
 
+<h1 class="text-center text-violet mb-5 my-5"> CONNEXION </h1>
 
-
-<h1 class="text-center text-info mt-4 mb-4"> CONNEXION </h1>
-
-<div  id="menu" class="full-screen">
-    <div class="card">
+<form  id="form" class="card-body" action="assets/login.php">
+    <div class="card mx-5">
         <div class="card-header">
             JUMADY️
         </div>
@@ -19,14 +17,10 @@
                 <input id="username-input" type="text" name="username" class="form-control">
             </div>
             <div class="text-center">
-                <button id="connection" class="btn btn-lg btn-dark">
-                     Se connecter
-                </button>
+                <button type="submit" class="btn btn-primary btn-large text-white"> Se connecter </button>
             </div>
         </div>
     </div>
-</div>
+</form>
 
 <?php require_once './includes/footer.php'; ?>
-
-

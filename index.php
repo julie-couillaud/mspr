@@ -14,7 +14,7 @@ $user = [];
 <section>
 <div class="container">
 
-    <h1 class="text-center">LES RECETTES PREFERES DES INTERNAUTES</h1>
+    <h1 class="text-center mx-5 my-5">LES RECETTES PREFEREES DES INTERNAUTES</h1>
 
     <div class="card my-5">
 
