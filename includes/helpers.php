@@ -1,6 +1,7 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/env.php';
 
+require_once $_SERVER['DOCUMENT_ROOT'] . '/env.php';
+session_start();
 function dd($var){
     var_dump($var);
     die();
@@ -30,6 +31,14 @@ function isAuth(){
 }
 
 function getAuth(){
+    if (!isAuth()){
+        return false;
+
+    }
+    return getUser($_SESSION['auth_id']);
+}
+
+function getAuthId(){
     $auth = getAuth();
     return $auth['id'];
 }

@@ -2,7 +2,6 @@
 <?php require_once 'config.php'; ?>
 <?php require_once 'helpers.php'; ?>
 
-<?php session_start(); ?>
 
 <!doctype html>
 <html lang="fr">

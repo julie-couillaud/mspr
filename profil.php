@@ -1,5 +1,7 @@
 <?php require_once 'includes/header.php'; ?>
 
+<?php dd(getAuth());?>
+
 <?php
 //recupère le paramètre d'URL nommé id
 $id = isset($_GET['id']) ? $_GET['id'] : null;

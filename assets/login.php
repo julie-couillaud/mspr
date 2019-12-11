@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 require_once '../includes/helpers.php';
 
 $data = [];
@@ -17,9 +15,18 @@ $stmt->bindValue(':password', $data['password']);
 $stmt->execute();
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-foreach ($user as $name => $value){
-    $_SESSION["$name"] = $value;
-}
+// foreach ($user as $name => $value){
+    // $_SESSION["$name"] = $value;
+//}
+
+$id = ($user['id']);
+//if ($user['password'] == sha1($data['password'])){
+    //$_SESSION['auth_id'] = $user['id'];
+    //header('Location: ../index.php?id=$id');
+//}
+//else{
+  //  header('Location: ../index.php');
+//}
 
 $pathSuccess = "/profil.php?id=" . $_SESSION['id'];
 header('Location: ' . $pathSuccess);

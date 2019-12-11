@@ -17,7 +17,6 @@ $stmt->execute();
 
 $id = $dbh->lastInsertId();
 
-session_start();
 $_SESSION['id'] = $id;
 
 $pathSuccess = "/profil.php?id=" . $_SESSION['id'];
