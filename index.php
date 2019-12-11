@@ -5,10 +5,6 @@
 
 $user = [];
 
-// if (isAuth($user)){
-// Bonjour Juju
-//};
-
 ?>
 
 <section>
@@ -39,7 +35,6 @@ $user = [];
                 <button class="btn btn-primary text-white">Publier</button>
             </form>
     </div>
-
 
     <div class="card-columns">
         <div class="card">
