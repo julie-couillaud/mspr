@@ -9,11 +9,11 @@
         </div>
         <div class="card-body">
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email">Email :</label>
                 <input id="username-input" type="text" name="username" class="form-control">
             </div>
             <div class="form-group">
-                <label for="username">Mot de passe</label>
+                <label for="username">Mot de passe :</label>
                 <input id="username-input" type="text" name="username" class="form-control">
             </div>
             <div class="text-center">

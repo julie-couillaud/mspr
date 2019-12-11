@@ -33,7 +33,6 @@ function isAuth(){
 function getAuth(){
     if (!isAuth()){
         return false;
-
     }
     return getUser($_SESSION['auth_id']);
 }

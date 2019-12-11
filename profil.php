@@ -1,7 +1,5 @@
 <?php require_once 'includes/header.php'; ?>
 
-<?php dd(getAuth());?>
-
 <?php
 //recupère le paramètre d'URL nommé id
 $id = isset($_GET['id']) ? $_GET['id'] : null;
@@ -10,12 +8,14 @@ if(!$id){
     exit;
 }
 
+dd(getAuth());
+
 $user = getUser($id); ?>
 
 <div class="container">
     <div class="card mx-auto my-3">
-        <div class="card-body">
-            <img src="http://placehold.it/300" alt="" class="img-rounded img-responsive" />
+        <div class="card-body align-content-center">
+            <img src="https://www.gravatar.com/avatar/" alt="" class="rounded"/>
         </div>
         <div class="card-body col-lg-10">
             <h2>Profil de <?php echo getAuth()['first_name']; ?></h2>

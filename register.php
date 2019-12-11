@@ -37,7 +37,7 @@
             </div>
 
             <div class="form-group">
-                <a class="btn btn-primary text-white"> Cliquez ici pour vous connecter </a>
+                <a class="btn btn-primary text-white" href="login.php"> Cliquez ici pour vous connecter </a>
             </div>
 
         </form>
