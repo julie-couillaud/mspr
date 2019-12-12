@@ -8,7 +8,7 @@ if(!$id){
     exit;
 }
 
-dd(getAuth());
+//dd(getAuth());
 
 $user = getUser($id); ?>
 

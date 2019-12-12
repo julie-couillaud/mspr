@@ -22,5 +22,5 @@ $id = $dbh->lastInsertId();
 
 $_SESSION['id'] = $id;
 
-$pathSuccess = "/recipies.php?id=" . $_SESSION['id'];
+$pathSuccess = "/recipe.php?id=" . $_SESSION['id'];
 header('Location: ' . $pathSuccess);

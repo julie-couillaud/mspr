@@ -19,7 +19,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
     // $_SESSION["$name"] = $value;
 //}
 
-$id = ($user['id']);
+$id = ($user['auth_id']);
 //if ($user['password'] == sha1($data['password'])){
     //$_SESSION['auth_id'] = $user['id'];
     //header('Location: ../index.php?id=$id');
@@ -28,5 +28,5 @@ $id = ($user['id']);
   //  header('Location: ../index.php');
 //}
 
-$pathSuccess = "/profil.php?id=" . $_SESSION['id'];
+$pathSuccess = "/profil.php?id=" . $_SESSION['auth_id'];
 header('Location: ' . $pathSuccess);
