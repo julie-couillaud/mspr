@@ -1,4 +1,8 @@
-<?php require_once './includes/header.php'; ?>
+<?php require_once './includes/header.php';
+
+if(isAuth()){
+    header('Location: ../');
+} ?>
 
     <section>
         <div class="container">

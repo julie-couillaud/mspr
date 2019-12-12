@@ -1,4 +1,8 @@
-<?php require_once './includes/header.php'; ?>
+<?php require_once './includes/header.php';
+
+if(isAuth()){
+  header('Location: ../');
+} ?>
 
 <section>
 <div class="container">
@@ -10,12 +14,12 @@
         <div class="form-group">
             <div class="form-group">
                 <label for="email">Email :</label>
-                <input id="username-input" type="text" name="username" class="form-control">
+                <input id="username-input" type="email" name="email" class="form-control">
             </div>
 
             <div class="form-group">
                 <label for="username">Mot de passe :</label>
-                <input id="username-input" type="text" name="username" class="form-control">
+                <input id="username-input" type="password" name="password" class="form-control">
             </div>
 
             <div class="form-group text-center">

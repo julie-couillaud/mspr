@@ -9,7 +9,9 @@ function dd($var){
 }
 
 function connectDB(){
-    return new PDO("mysql:host=localhost;dbname=mspr", "root", "");
+    return new PDO("mysql:host=localhost;dbname=mspr", "root", "", [
+        PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
+    ]);
 }
 
 function isAuth(){

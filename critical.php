@@ -10,7 +10,7 @@
 
             foreach ($recipes as $recipe){
 
-                echo '<h2>' . 'Laisser un commentaire sur ' . $recipe ['title'] . '</h2>';
+                echo '<h2>' . 'Laisser un commentaire sur ' . $recipe['title'] . '</h2>';
             }
             ?>
 
