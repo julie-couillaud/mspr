@@ -20,8 +20,9 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 // Compaerer le hash du mot de passe du form et celui de l'user
 if ($password === $user['password']){
     // Si egaux alors connexion + redirection home
-
+    $_SESSION['auth_id'] = $user['id'];
+    header('Location: ../index.php');
 } else {
     // Sinon redirection formulaire
-    header(Location:'');
+    header('Location: ../register.php');
 }

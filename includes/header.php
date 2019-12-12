@@ -21,7 +21,6 @@
                 <li class="nav-item text-violet">
                     <a class="nav-link" href="index.php">Top recettes</a>
                 </li>
-
                 <?php if (isAuth()): ?>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Apéros</a>
@@ -43,22 +42,21 @@
                     <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Rechercher</button>
                 </form>
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#debug">
                             Debug
                         </a>
-                    </li>
-
+                    </li> -->
                     <?php if (!isAuth()): ?>
                         <li class="nav-item">
                             <a class="nav-link" href="login.php">Se connecter</a>
                         </li>
                     <?php else: ?>
                         <li>
-                            <a class="nav-link" href="profil.php">Mon profil</a>
+                            <a class="nav-link" href="profil.php?id=<?php echo getAuthId(); ?>">Mon profil</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="login.php">Se déconnecter</a>
+                            <a class="nav-link" href="./assets/logout.php">Se déconnecter</a>
                         </li>
                     <?php endif; ?>
                 </ul>

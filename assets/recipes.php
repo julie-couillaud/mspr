@@ -8,6 +8,7 @@ foreach ($_POST as $name => $value){
 }
 
 $dbh = connectDB();
+
 $stmt = $dbh->prepare('INSERT INTO recipes (title, user_id, content, date_created) VALUES (:title, :user_id, :content, :date_created)');
 $stmt->bindValue(':title', $data['title']);
 $stmt->bindValue(':user_id', $data['user_id']);

@@ -1,20 +1,13 @@
-<?php require_once './includes/header.php'; ?>
+<?php require_once './includes/header.php';
+$id = $_GET['id'];
+?>
 
     <section>
 
         <div class="container">
 
             <h1 class="text-center text-violet mt-4 mb-4"> Laisser un commentaire </h1>
-
-            <?php
-
-            foreach ($recipes as $recipe){
-
-                echo '<h2>' . 'Laisser un commentaire sur ' . $recipe['title'] . '</h2>';
-            }
-            ?>
-
-            <form method="post" action="./assets/critical.php">
+            <form method="post" action="./assets/critical.php?id=<?php echo $id; ?>">
 
                 <div class ="form-group">
                     <label for="title"> Titre de votre commentaire : </label>
@@ -23,7 +16,7 @@
 
                 <div class ="form-group">
                     <label for="content">Votre commentaire : </label>
-                    <input type="text" name="comment" id="comment" placeholder="Commentaire" class="form-control">
+                    <textarea type="text" name="comment" id="comment" placeholder="Commentaire" class="form-control"></textarea>
                 </div>
 
                 <div class="form-group">
@@ -37,7 +30,7 @@
                 </div>
 
                 <div class="form-group">
-                    <a class="btn btn-primary text-white"> Envoyer mon commentaire </a>
+                    <button  class="btn btn-primary text-white" type="submit"> Envoyer mon commentaire </button>
                 </div>
 
             </form>

@@ -62,3 +62,19 @@ function getRecipe($id){
     $stmt->execute([":id"=> $id]);
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
+
+function getComments(){
+    $dbh = connectDB();
+    $stmt = $dbh->prepare('SELECT * FROM comments');
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getComment($id){
+    $dbh = connectDB();
+    $stmt = $dbh->prepare("SELECT * FROM comments WHERE id = :id");
+    $stmt->bindValue(':id', $id);
+    $stmt->execute([":id"=> $id]);
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+}
+

@@ -17,7 +17,7 @@ $stmt->execute();
 
 $id = $dbh->lastInsertId();
 
-$_SESSION['id'] = $id;
+$_SESSION['auth_id'] = $id;
 
-$pathSuccess = "/profil.php?id=" . $_SESSION['id'];
+$pathSuccess = "/profil.php?id=" . $id;
 header('Location: ' . $pathSuccess);

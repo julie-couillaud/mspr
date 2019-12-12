@@ -31,7 +31,7 @@
                         <h2 class="card-title text-violet"><?php echo $recipe['title']; ?></h2>
                         <p class="card-text"><?php echo $recipe['content']; ?></p>
                     </div>
-        </a>
+                </a>
             <?php endforeach; ?>
         </div>
 
